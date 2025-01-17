@@ -1,24 +1,20 @@
 doctype html
 html
     head
-        title Ciao Mondo
+        title #{title}
         link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/style.css')
         meta(name="viewport" content="width=device-width, initial-scale=1")
     body
-        header.container.mt-4
+        header.header.bg-primary.p-3
+            .container-fluid
+                h1.text-light #{title}
+        .container.mt-5
             .row
-                .col
-                    h1 Hello World
-                    div All'inizio ero solo
-                    div A parlare del buio
-                    div E forse a volte stonavo però
-        main.container.mt-4
-            .row
-                .col-md-6
-                    section
-                        h2 Sezione Principale
-                        p Questo è un paragrafo nella sezione principale.
-                .col-md-6
-                    section
-                        h2 Un'altra Sezione
-                        p Questo è un altro paragrafo in un'altra sezione.
+                each set in lego
+                    .col-md-4
+                        .card.mb-4
+                            img.card-img-top(src=`/images/${set.cover}`)
+                            .card-body
+                                a(href=`#`)
+                                    h2.card-title.person-name #{set.name}

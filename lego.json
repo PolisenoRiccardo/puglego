@@ -1,0 +1,39 @@
+{
+    "set": 
+    [
+        {
+            "name": "Imperial AT-AT",
+            "number": "LEGO 4483",
+            "theme": "Star Wars Classic",
+            "imgSrc": 
+                    {
+                   
+                        "cover": "at-at-cover.jpg",
+                        "instructions": "at-at-instructions.jpg"
+                    },  
+            "year": "2003"
+        },
+        {
+            "name": "Escape from Privet Drive",
+            "number": "LEGO 4728",
+            "theme": "Harry Potter",
+            "imgSrc": 
+                    {
+                        "cover": "escape-drive-cover.jpg",
+                        "instructions": "escape-drive-instructions.jpg"
+                    },      
+            "year": "2002"
+        },
+        {
+            "name": "Krusty Krab",
+            "number": "LEGO 3825",
+            "theme": "Spongebob Squarepants",
+            "imgSrc": 
+                    {
+                        "cover": "krusty-krab-cover.jpg",
+                        "instructions": "krusty-krab-instructions.jpg"
+                    },      
+            "year": "2006"
+        }
+    ]
+}
