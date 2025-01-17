@@ -14,7 +14,7 @@ html
                 each set in lego
                     .col-md-4
                         .card.mb-4
-                            img.card-img-top(src=`/images/${set.cover}`)
+                            img.card-img-top(src=`/images/${set.imgSrc.cover}`)
                             .card-body
-                                a(href=`#`)
+                                a(href=`/set/${set.name}`)
                                     h2.card-title.person-name #{set.name}
